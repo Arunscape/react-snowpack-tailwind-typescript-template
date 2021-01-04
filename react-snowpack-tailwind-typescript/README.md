@@ -1,3 +1,11 @@
+# To use this template:
+
+    npx degit Arunscape/react-snowpack-tailwind-typescript-template your-app-name
+
+this was created by:
+
+    npx create-snowpack-app react-snowpack-tailwind-typescript-template --template @snowpack/app-template-react-typescript --use-yarn
+
 # New Project
 
 > ✨ Bootstrapped with Create Snowpack App (CSA).
