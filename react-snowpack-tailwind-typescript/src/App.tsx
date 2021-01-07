@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
-import './App.css';
 
 interface AppProps {}
 
-function App({}: AppProps) {
+const App = ({}: AppProps)  => {
   // Create the count state.
   const [count, setCount] = useState(0);
   // Create the counter (+1 every second).
@@ -14,25 +13,20 @@ function App({}: AppProps) {
   }, [count, setCount]);
   // Return the App component.
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="text-center">
+      <header className="bg-gray-800 flex flex-col items-center justify-center text-white text-3xl min-h-screen">
+        <img src={logo} className="animate-spin-slow" alt="logo" style={{height: '40vmin', pointerEvents: 'none'}}/>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <p>
-          Page has been open for <code>{count}</code> seconds.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
+        <a
+          className="text-blue-400"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
       </header>
     </div>
   );
